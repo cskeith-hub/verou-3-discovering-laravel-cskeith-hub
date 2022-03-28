@@ -7,6 +7,8 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
+
+
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
@@ -19,18 +21,20 @@ class Controller extends BaseController
         return view('welcome');
     }
 
-    public function nextPage()
+    public function nextPage($resultPost)
     {
-       
-        return view('exercisePage1');
-
+        if($resultPost === "exercisePage1")
+        {
+            return view('exercisePage1');
+        }
+        elseif($resultPost === "exercisePage2")
+        {
+            return view('exercisePage2');
+        }
     }
-    public function nextPageNext()
-    {
-       
-        return view('exercisePage2');
 
-    }
+    
+   
 }
 
 
