@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\Controller;
-Route::get('/', [Controller::class, 'message']);
-Route::get('/{post}', [Controller::class, 'nextPage']);
+Route::get('/', [Controller::class, 'message'])->where('/', '[A-z_\-]+'); // where("#", '[A-z]+') now only read Upper & lowerCase letters + underScore and Dash
+Route::get('/{post}', [Controller::class, 'nextPage'])->where('post', '[A-z]+');
 
 
 
