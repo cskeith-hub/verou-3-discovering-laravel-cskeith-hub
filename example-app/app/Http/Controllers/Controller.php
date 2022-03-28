@@ -33,7 +33,9 @@ class Controller extends BaseController
         }
         elseif(! file_exists($resultPost)) // if action does not exist do this
         {
-            dd('File does not exist! Please contact Colin');
+            dd('File does not exist! Please contact Colin'); // also can ddd Dump,Die and Debug
+            // return redirect('/');
+            //abort(404);
         }
     }
   
