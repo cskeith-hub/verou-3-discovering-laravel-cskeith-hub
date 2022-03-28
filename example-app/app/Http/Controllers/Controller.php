@@ -31,10 +31,12 @@ class Controller extends BaseController
         {
             return view('exercisePage2');
         }
+        elseif(! file_exists($resultPost)) // if action does not exist do this
+        {
+            dd('File does not exist! Please contact Colin');
+        }
     }
-
-    
-   
+  
 }
 
 
