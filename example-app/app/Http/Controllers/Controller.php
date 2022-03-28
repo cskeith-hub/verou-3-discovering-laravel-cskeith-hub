@@ -18,6 +18,19 @@ class Controller extends BaseController
         echo $helloWorld;
         return view('welcome');
     }
+
+    public function nextPage()
+    {
+       
+        return view('exercisePage1');
+
+    }
+    public function nextPageNext()
+    {
+       
+        return view('exercisePage2');
+
+    }
 }
 
 

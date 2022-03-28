@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Controller;
 Route::get('/', [Controller::class, 'message']);
+Route::get('/exercisePage1', [Controller::class, 'nextPage']);
+Route::get('/exercisePage2', [Controller::class, 'nextPageNext']);
+
 
 // Route::get('/', function () {
     

@@ -22,6 +22,7 @@
     </head>
     <body class="antialiased">
         {{-- <a href="/hello"><br>echo hello world</a> <!-- Hello world link Routing way--> --}}
+        <a href="/exercisePage1"><br>Pagina 1</a>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
