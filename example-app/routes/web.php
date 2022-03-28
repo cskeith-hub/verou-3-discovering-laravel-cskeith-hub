@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\Controller;
-Route::get('/hello', [Controller::class, 'message']);
+Route::get('/', [Controller::class, 'message']);
 
-Route::get('/', function () {
+// Route::get('/', function () {
     
-    return view('welcome');
-});
+//     return view('welcome');
+// });
 
 
 
