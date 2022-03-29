@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        
-    </header>
-</body>
-</html>
+<header>
+   <h1>Colin Learing Laravel</h1>
+   <a href="/">Home</a>   
+   <a href="exercisePage1">Exercise Page 1</a>  
+   <a href="exercisePage2">Exercise Page 2</a>  
+</header>
+
+    

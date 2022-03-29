@@ -1,5 +1,5 @@
 @extends('layouts.layout')
 
 @section('body')
-    <h1>exercisePage 1<h1>
+    <h1>Learning Laravel<h1>
 @endsection

@@ -14,11 +14,9 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
 
-    public function message()
+    public function index()
     {
-        $helloWorld = "Hello World";
-        echo $helloWorld;
-        return view('welcome');
+        return view('index');
     }
 
     public function nextPage($resultPost)
