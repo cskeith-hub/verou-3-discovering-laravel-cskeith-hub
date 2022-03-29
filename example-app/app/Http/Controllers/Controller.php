@@ -41,7 +41,7 @@ class Controller extends BaseController
     public function formHandle(Request $request)
     {
        $result = $request->fname;
-        dd($result);
+       echo "Hello {$result} Nice to have you here";
        return view('home');
     }
   
