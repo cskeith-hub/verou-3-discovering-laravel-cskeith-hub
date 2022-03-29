@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 
 
 
@@ -14,9 +15,9 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
 
-    public function index()
+    public function home()
     {
-        return view('index');
+        return view('home');
     }
 
     public function nextPage($resultPost)
@@ -35,6 +36,13 @@ class Controller extends BaseController
             // return redirect('/');
             //abort(404);
         }
+    }
+
+    public function formHandle(Request $request)
+    {
+        $request->name;
+        dd($request->name);§
+       return view('home');
     }
   
 }

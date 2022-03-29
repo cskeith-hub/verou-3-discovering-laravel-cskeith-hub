@@ -14,15 +14,15 @@ use App\Http\Controllers\Controller;
 */
 
 
-Route::get('/', [Controller::class, 'index']);
+Route::get('/', [Controller::class, 'home']);
 Route::get('/{post}', [Controller::class, 'nextPage']);
+Route::post('/home', [Controller::class, 'formHandle']);
 
 
 
 // Route::get('/', function () {
     
-//     return view('welcome');
-// });
+//     return view('welcome');§
 
 
 
