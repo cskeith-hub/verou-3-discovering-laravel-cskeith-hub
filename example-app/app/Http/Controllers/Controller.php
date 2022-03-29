@@ -40,8 +40,8 @@ class Controller extends BaseController
 
     public function formHandle(Request $request)
     {
-        $request->name;
-        dd($request->name);§
+       $result = $request->fname;
+        dd($result);
        return view('home');
     }
   

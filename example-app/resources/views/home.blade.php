@@ -5,8 +5,8 @@
 
     <form action="/home" method="post">
         @csrf
-        <label for="name">First name:</label><br>
-        <input type="text" id="name" value=""><br><br>
-        <input type="submit" value="Submit">
+        <label for="fname">First name:</label><br>
+        <input type="fname" id="fname" name="fname" value=""><br><br>
+        <input type="submit" id="submit" value="Submit">
     </form>
 @endsection
