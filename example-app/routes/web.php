@@ -18,7 +18,7 @@ use app\Http\Controllers\CrudController;
 Route::get('/', [Controller::class, 'home']);
 Route::get('/{post}', [Controller::class, 'nextPage']);
 Route::post('/home', [Controller::class, 'formHandle']);
-Route::post('/home', [CrudController::class, 'create']);
+Route::post('/createLearner', [CrudController::class, 'create']);
 
 
 
