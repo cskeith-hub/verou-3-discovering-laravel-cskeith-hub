@@ -9,4 +9,5 @@
         <input type="fname" id="fname" name="fname" value=""><br><br>
         <input type="submit" id="submit" value="Submit">
     </form>
+
 @endsection
