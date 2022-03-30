@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('body')
-    <h1>exercisePage 1<h1>
+    <h1>Coaches Overview<h1>
 
         @foreach ($coach as $coach)
         <ul>

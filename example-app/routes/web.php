@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
-use app\Http\Controllers\CrudController;
+use App\Http\Controllers\CrudController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,13 +18,14 @@ use app\Http\Controllers\CrudController;
 Route::get('/', [Controller::class, 'home']);
 Route::get('/{post}', [Controller::class, 'nextPage']);
 Route::post('/home', [Controller::class, 'formHandle']);
-Route::post('/createLearner', [CrudController::class, 'create']);
+Route::post('/createLearner',[CrudController::class,'create']);
+
 
 
 
 // Route::get('/', function () {
     
-//     return view('welcome');§
+//     return view('welcome');
 
 
 

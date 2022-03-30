@@ -3,18 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Coach;
-use app\Models\Learner;
+use App\Models\Learner;
 
 class CrudController extends Controller
 {
     public function create(Request $request)
     {
         $learnerName = $request->fname;
+        $learnerEmail = $request->email;
+        $learnerGroup = $request->group;
+
         $learner = new Learner();
         $learner->name = $learnerName;
+        $learner->email = $learnerEmail;
+        $learner->group_id = $learnerGroup;
+
+        // dd($learner->name,$learner->email,$learner->group);
         $learner->save();
         // Learners::insert('insert into learners (name) values (?, ?)', [1, 'Dayle']);
-        return view('exercisePage2');
+        return view('home');// if a return learners Overview it bugs
     }
 }

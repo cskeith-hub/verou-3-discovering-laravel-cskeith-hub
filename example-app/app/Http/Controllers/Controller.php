@@ -22,16 +22,21 @@ class Controller extends BaseController
 
     public function nextPage($resultPost)
     {
-        if($resultPost === "exercisePage1")
+        if($resultPost === "createLearner")
+        {
+            return view('createLearner');
+        }
+        elseif($resultPost === "exercisePage1")
         {
             $coach = Coach::get();
-        // dd($coaches);
+    
             return view('exercisePage1', compact('coach'));
         }
         elseif($resultPost === "exercisePage2")
         {
-            $learner = Learner::get();
-            return view('exercisePage2', compact('learner'));
+            $learners = Learner::get();
+
+            return view('exercisePage2', compact('learners'));
         }
         elseif(! file_exists($resultPost)) // if action does not exist do this
         {
@@ -41,12 +46,6 @@ class Controller extends BaseController
         }
     }
 
-    public function formHandle(Request $request)
-    {
-       $result = $request->fname;
-       echo "Hello {$result} Nice to have you here";
-       return view('home');
-    }
 
     
 
