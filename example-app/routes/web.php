@@ -17,6 +17,7 @@ use App\Http\Controllers\Controller;
 Route::get('/', [Controller::class, 'home']);
 Route::get('/{post}', [Controller::class, 'nextPage']);
 Route::post('/home', [Controller::class, 'formHandle']);
+Route::post('/home', [Controller::class, 'addLearner']);
 
 
 
