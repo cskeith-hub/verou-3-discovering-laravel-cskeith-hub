@@ -7,6 +7,8 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
+use App\Models\Coaches;
+use App\Models\Learners;
 
 
 
@@ -17,6 +19,9 @@ class Controller extends BaseController
 
     public function home()
     {
+        
+        
+
         return view('home');
     }
 
@@ -24,11 +29,14 @@ class Controller extends BaseController
     {
         if($resultPost === "exercisePage1")
         {
-            return view('exercisePage1');
+            $coaches = Coaches::get();
+        // dd($coaches);
+            return view('exercisePage1', compact('coaches'));
         }
         elseif($resultPost === "exercisePage2")
         {
-            return view('exercisePage2');
+            $learners = Learners::get();
+            return view('exercisePage2', compact('learners'));
         }
         elseif(! file_exists($resultPost)) // if action does not exist do this
         {
@@ -44,6 +52,7 @@ class Controller extends BaseController
        echo "Hello {$result} Nice to have you here";
        return view('home');
     }
+
   
 }
 
