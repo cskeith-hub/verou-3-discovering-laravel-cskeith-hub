@@ -48,15 +48,7 @@ class Controller extends BaseController
        return view('home');
     }
 
-    public function addLearner(Request $request)
-    {
-        $learnerName = $request->fname;
-        $learner = new Learner();
-        $learner->name = $learnerName;
-        $learner->save();
-        // Learners::insert('insert into learners (name) values (?, ?)', [1, 'Dayle']);
-        return view('exercisePage2');
-    }
+    
 
   
 }

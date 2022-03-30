@@ -8,5 +8,4 @@
             <li>{{ $coach->name }}</li> 
         </ul>
         @endforeach  
-        <p>{{$coach}}</p>
 @endsection
