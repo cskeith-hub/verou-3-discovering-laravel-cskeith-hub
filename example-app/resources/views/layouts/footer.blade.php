@@ -1,1 +1,1 @@
-<p>This will be my Footer</p>
+<h3>This will be my Footer<h3>

@@ -20,7 +20,10 @@ class CrudController extends Controller
 
         // dd($learner->name,$learner->email,$learner->group);
         $learner->save();
+
+        
+        $learners = Learner::get();
         // Learners::insert('insert into learners (name) values (?, ?)', [1, 'Dayle']);
-        return view('home');// if a return learners Overview it bugs
+        return view('exercisePage2', compact('learners'));// if a return learners Overview it bugs
     }
 }

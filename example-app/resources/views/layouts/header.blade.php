@@ -1,5 +1,5 @@
 <header>
-   <h1>Colin Learning Laravel</h1>
+   <h1>Class Room Manager</h1>
    <a href="/">Home</a>
    <a href="createLearner">Add Learner</a>  
    <a href="exercisePage1">Coaches Overview</a>  

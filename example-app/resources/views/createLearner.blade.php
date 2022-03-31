@@ -2,6 +2,7 @@
 
 @section('body')
 
+<br>
 <form action="/createLearner" method="post">
     @csrf
     <label for="fname">First name:</label><br>
@@ -12,5 +13,6 @@
     <input type="group" id="group" name="group" value=""><br><br>
     <input type="submit" id="submit" value="Submit">
 </form>
+<br>
 
 @endsection
