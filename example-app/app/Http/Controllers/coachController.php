@@ -31,8 +31,8 @@ class coachController extends Controller
         $coach->save();
 
         
-        $coaches = coach::get();
+        $coach = coach::get();
         // Learners::insert('insert into learners (name) values (?, ?)', [1, 'Dayle']);
-        return view('coaches\coachesOverview', compact('coaches'));// if a return learners Overview it bugs
+        return view('coaches\coachesOverview', compact('coach'));// if a return learners Overview it bugs
     }
 }
