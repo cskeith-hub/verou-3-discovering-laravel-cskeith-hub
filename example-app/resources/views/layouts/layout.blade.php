@@ -7,6 +7,7 @@
     <title>Colin Learning Laravel</title>
 </head>
 <body>
+    
     @include('layouts.header')
     @yield('body')
     @include('layouts.footer')

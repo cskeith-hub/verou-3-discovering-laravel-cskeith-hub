@@ -17,11 +17,13 @@ class Controller extends BaseController
 
     public function home()
     {
+        
         return view('home');
     }
 
     public function nextPage($resultPost)
     {
+        clock($resultPost);
         if($resultPost === "createLearner")
         {
             return view('createLearner');
