@@ -21,7 +21,7 @@ class Controller extends BaseController
 
     public function addLearnerPage()
     {
-        return view('addLearnerPage');
+        return view('students\addLearnerPage');
     }
 
     public function coachesOverview()
@@ -35,7 +35,7 @@ class Controller extends BaseController
     {
         $learners = Learner::get();
 
-        return view('learnersOverview', compact('learners'));
+        return view('students\learnersOverview', compact('learners'));
     }
 }
 

@@ -24,6 +24,6 @@ class CrudController extends Controller
         
         $learners = Learner::get();
         // Learners::insert('insert into learners (name) values (?, ?)', [1, 'Dayle']);
-        return view('learnersOverview', compact('learners'));// if a return learners Overview it bugs
+        return view('students\learnersOverview', compact('learners'));// if a return learners Overview it bugs
     }
 }
