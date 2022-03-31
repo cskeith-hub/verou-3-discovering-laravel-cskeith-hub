@@ -3,7 +3,7 @@
 @section('body')
 
 <br>
-<form action="/createLearner" method="post">
+<form action="/addStudent" method="post">
     @csrf
     <label for="fname">First name:</label><br>
     <input type="fname" id="fname" name="fname" value=""><br><br>
