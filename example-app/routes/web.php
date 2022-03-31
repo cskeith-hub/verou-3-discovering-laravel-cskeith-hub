@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\CrudController;
+use App\Http\Controllers\studentController;
+use App\Http\Controllers\coachController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,19 +17,9 @@ use App\Http\Controllers\CrudController;
 
 
 Route::get('/', [Controller::class, 'home']);
-Route::get('/addLearnerPage', [Controller::class, 'addLearnerPage']);
-Route::get('/coachesOverview', [Controller::class, 'coachesOverview']);
-Route::get('/learnersOverview', [Controller::class, 'learnersOverview']);
-Route::post('/addStudent',[CrudController::class,'create']);
-
-
-
-
-
-
-// Route::get('/', function () {
-    
-//     return view('welcome');
-
-
-
+Route::get('/addLearnerPage', [studentController::class, 'addLearnerPage']);
+Route::get('/learnersOverview', [studentController::class, 'learnersOverview']);
+Route::post('/addStudent',[studentController::class,'create']);
+Route::get('/addCoachPage', [coachController::class, 'addCoachPage']);
+Route::post('/addCoach',[coachController::class,'create']);
+Route::get('/coachesOverview', [coachController::class, 'coachesOverview']);

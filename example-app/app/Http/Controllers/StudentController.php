@@ -5,8 +5,21 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Learner;
 
-class CrudController extends Controller
+class StudentController extends Controller
 {
+    
+    public function addLearnerPage()
+    {
+        return view('students\addLearnerPage');
+    }
+
+    public function learnersOverview()
+    {
+        $learners = Learner::get();
+
+        return view('students\learnersOverview', compact('learners'));
+    }
+
     public function create(Request $request)
     {
         $learnerName = $request->fname;
