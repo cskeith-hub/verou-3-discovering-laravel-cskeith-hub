@@ -26,17 +26,17 @@ class Controller extends BaseController
         {
             return view('createLearner');
         }
-        elseif($resultPost === "exercisePage1")
+        elseif($resultPost === "coachesOverview")
         {
             $coach = Coach::get();
     
-            return view('exercisePage1', compact('coach'));
+            return view('coachesOverview', compact('coach'));
         }
-        elseif($resultPost === "exercisePage2")
+        elseif($resultPost === "learnersOverview")
         {
             $learners = Learner::get();
 
-            return view('exercisePage2', compact('learners'));
+            return view('learnersOverview', compact('learners'));
         }
         elseif(! file_exists($resultPost)) // if action does not exist do this
         {
