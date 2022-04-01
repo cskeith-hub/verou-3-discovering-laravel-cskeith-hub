@@ -1,5 +1,12 @@
 {
-    "private": true,
+    "name": "example-app",
+    "version": "1.0.0",
+    "description":"",
+    "main": "webpack.mix.js",
+    "directories": {
+        "test": "tests"
+    },
+
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
@@ -14,5 +21,7 @@
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
-    }
+    },
+    "author": "",
+    "license": "ISC"
 }
